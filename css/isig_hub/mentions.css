@@ -22,7 +22,17 @@
     color: white;
     padding: 1rem;
   }
+
+    header a{
+    color: white;
+    text-decoration: none;
+  }
   
+  header a:visited{
+    color: white; /* Ou définissez une autre couleur selon vos préférences */
+    text-decoration: inherit;
+  }
+
   .header-content {
     max-width: 1200px;
     margin: 0 auto;
