@@ -284,11 +284,6 @@ main {
   font-size: 1.2rem;
 }
 
-.advertisement li::before {
-  content: '🏢';
-  margin-right: 0.5rem;
-  font-size: 1.2rem;
-}
 
 .news-events .event-date, .advertisement .partner-name {
   font-weight: bold;
