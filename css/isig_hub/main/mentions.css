@@ -21,8 +21,8 @@
     background-color: var(--primary-color);
     color: white;
     padding: 1rem;
+    position: relative;
   }
-  
   header a{
     color: white;
     text-decoration: none;
@@ -39,35 +39,40 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
   }
   
   .logo {
     font-size: 1.5rem;
     font-weight: bold;
-    margin-bottom: 0.5rem;
   }
   
   nav ul {
     list-style-type: none;
     display: flex;
     gap: 1rem;
-    flex-wrap: wrap;
+    margin: 0;
     padding: 0;
-  }
-  
-  nav ul li {
-    margin-bottom: 0.5rem;
+    align-items: center;
   }
   
   nav ul li a {
     color: white;
     text-decoration: none;
     transition: color 0.3s ease;
+    font-size: 1rem;
   }
   
   nav ul li a:hover {
     color: var(--secondary-color);
+  }
+  
+  .menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
   }
   
   .login-button {
@@ -77,19 +82,29 @@
     border-radius: 5px;
     text-decoration: none;
     transition: background-color 0.3s ease;
+    font-size: 1rem;
   }
   
   .login-button:hover {
     background-color: #c0392b;
   }
   
-  .menu-toggle {
-    display: none;
-    background: none;
-    border: none;
-    font-size: 1.5rem;
+  .user-name {
+    font-weight: bold;
+    color: var(--user-color);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logout-button {
+    background-color: var(--secondary-color);
     color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
     cursor: pointer;
+    border: none;
   }
   
   main {
@@ -177,20 +192,23 @@
   
   @media (max-width: 768px) {
     .header-content {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-    
-    .menu-toggle {
-      display: block;
-      position: absolute;
-      right: 1rem;
-      top: 1rem;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
     }
     
     nav {
       display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
       width: 100%;
+      background-color: rgba(52, 73, 94, 0.95);
+      padding: 1rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+      backdrop-filter: blur(10px);
+      transition: all 0.3s ease;
     }
     
     nav.active {
@@ -199,28 +217,14 @@
     
     nav ul {
       flex-direction: column;
-      align-items: flex-start;
-      width: 100%;
     }
     
     nav ul li {
-      width: 100%;
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.8rem;
     }
     
-    nav ul li a {
+    .menu-toggle {
       display: block;
-      padding: 0.5rem 0;
-    }
-    
-    .login-button {
-      display: block;
-      text-align: center;
-      margin-top: 1rem;
-    }
-    
-    .footer-section {
-      flex-basis: 100%;
     }
   }
   
