@@ -247,7 +247,7 @@ main {
 }
 
 .submit-reply {
-    background: var(--primary-color);
+    background: var(--secondary-color);
     color: white;
     padding: 0.8rem 1.5rem;
     border: none;
@@ -257,7 +257,7 @@ main {
 }
 
 .submit-reply:hover {
-    background: var(--primary-color);
+    background: #f47c6f;
 }
 
 footer {
