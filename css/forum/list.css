@@ -209,6 +209,17 @@ main {
 }
 
 .topic-card a{
+    color: inherit;       /* Garde la couleur du texte environnant */
+    text-decoration: none; /* Supprime le soulignement */
+    font-weight: normal;   /* Retire tout style de gras */
+    background: none;      /* Supprime les arrière-plans */
+    border: none;          /* Supprime les bordures */
+    padding: 0;            /* Supprime les marges internes */
+    margin: 0;             /* Supprime les marges externes */
+}
+
+.topic-card a:hover,.topic-card a:focus,.topic-card a:active {
+  color: inherit;
   text-decoration: none;
 }
 
