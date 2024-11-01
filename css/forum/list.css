@@ -208,7 +208,7 @@ main {
     background-color: #f8f9fa;
 }
 
-.topic-list a{
+.topics-list a{
     color: inherit;       /* Garde la couleur du texte environnant */
     text-decoration: none; /* Supprime le soulignement */
     font-weight: normal;   /* Retire tout style de gras */
@@ -218,7 +218,7 @@ main {
     margin: 0;             /* Supprime les marges externes */
 }
 
-.topic-list a:hover,.topic-list a:focus,.topic-list a:active {
+.topics-list a:hover,.topics-list a:focus,.topics-list a:active {
   color: inherit;
   text-decoration: none;
 }
