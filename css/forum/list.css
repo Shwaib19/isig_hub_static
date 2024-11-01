@@ -208,6 +208,10 @@ main {
     background-color: #f8f9fa;
 }
 
+.topic-card a{
+  text-decoration: none;
+}
+
 .topic-main {
     display: flex;
     align-items: center;
