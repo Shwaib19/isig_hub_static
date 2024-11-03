@@ -192,7 +192,7 @@ main {
 
 .topic-card {
     padding: 1.5rem;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #979797;
     display: grid;
     grid-template-columns: 1fr 150px 120px;
     gap: 2rem;
@@ -200,9 +200,6 @@ main {
     transition: background-color 0.3s;
 }
 
-.topic-card:last-child {
-    border-bottom: none;
-}
 
 .topic-card:hover {
     background-color: #f8f9fa;
