@@ -192,7 +192,7 @@ main {
 
 .topic-card {
     padding: 1.5rem;
-    border-bottom: 1px solid #979797;
+    border-bottom: 1px solid #eee;
     display: grid;
     grid-template-columns: 1fr 150px 120px;
     gap: 2rem;
