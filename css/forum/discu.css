@@ -382,3 +382,14 @@ footer {
     }
 
 }
+
+
+/* CSS */
+.delete-icon i {
+    color: red; /* Change "red" to any color you like */
+}
+
+/* Vous pouvez aussi ajouter un effet de survol */
+.delete-icon i:hover {
+    color: darkred; /* Change "darkred" to another color for hover effect */
+}
