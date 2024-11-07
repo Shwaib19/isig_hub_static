@@ -382,7 +382,6 @@ footer {
 
 .vote-options {
     display: flex;
-    overflow-x: auto;  
     gap: 1rem;
     margin-bottom: 1rem;
 }
@@ -491,6 +490,14 @@ footer {
     .footer-section {
         text-align: center;
     }
+
+    .vote-options {
+      display: flex;
+      overflow-x: auto;  
+      gap: 1rem;
+      margin-bottom: 1rem;
+  }
+
 }
 
 @media (max-width: 480px) {
