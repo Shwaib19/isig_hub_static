@@ -26,15 +26,16 @@ header {
     padding: 1rem;
     position: relative;
   }
-  header a, .vote-options a{
+  header a{
     color: white;
     text-decoration: none;
   }
   
-  header a:visited, .vote-options a:visited{
+  header a:visited{
     color: white; /* Ou définissez une autre couleur selon vos préférences */
     text-decoration: inherit;
   }
+
   
   .header-content {
     max-width: 1200px;
@@ -490,3 +491,13 @@ footer {
         padding: 1rem;
     }
 }
+
+.vote-options a{
+    color: #3498db;
+    text-decoration: none;
+  }
+
+.vote-options a:visited{
+    color: #3498db; /* Ou définissez une autre couleur selon vos préférences */
+    text-decoration: inherit;
+  }
