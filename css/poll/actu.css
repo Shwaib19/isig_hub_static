@@ -382,6 +382,7 @@ footer {
 
 .vote-options {
     display: flex;
+    overflow-x: auto;  
     gap: 1rem;
     margin-bottom: 1rem;
 }
