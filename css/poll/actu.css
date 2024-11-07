@@ -381,7 +381,7 @@ footer {
 }
 
 .vote-btn {
-    padding: 0.2rem 0.5rem;
+    padding: 0.75rem 1.5rem;
     border: 2px solid #3498db;
     border-radius: 8px;
     background: transparent;
@@ -390,8 +390,6 @@ footer {
     transition: all 0.3s ease;
     font-weight: 500;
     flex: 1;
-    font-size: larger;
-
 }
 
 .vote-btn:hover {
